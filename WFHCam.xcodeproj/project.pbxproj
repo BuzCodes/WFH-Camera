@@ -6,8 +6,33 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		799E2DF928CEC4CE00E6DF87 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2DF828CEC4CE00E6DF87 /* Main.swift */; };
+		799E2DFB28CEC53A00E6DF87 /* HardwarePlugInInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2DFA28CEC53A00E6DF87 /* HardwarePlugInInterface.swift */; };
+		799E2E0028CEC7CB00E6DF87 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 799E2DFF28CEC7CB00E6DF87 /* CoreMediaIO.framework */; };
+		799E2E0428CECE7E00E6DF87 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0328CECE7E00E6DF87 /* Object.swift */; };
+		799E2E0628CECE8300E6DF87 /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0528CECE8300E6DF87 /* Plugin.swift */; };
+		799E2E0828CECE8900E6DF87 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0728CECE8900E6DF87 /* Device.swift */; };
+		799E2E0A28CECE9500E6DF87 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0928CECE9500E6DF87 /* Stream.swift */; };
+		799E2E0D28CECF1400E6DF87 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0C28CECF1400E6DF87 /* Property.swift */; };
+		799E2E0F28CECF2100E6DF87 /* PropertyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E0E28CECF2100E6DF87 /* PropertyValue.swift */; };
+		799E2E1228CECF8700E6DF87 /* CVPixelBuffer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E2E1128CECF8700E6DF87 /* CVPixelBuffer+.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		799E2DED28CEC40D00E6DF87 /* WFHCam.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFHCam.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		799E2DED28CEC40D00E6DF87 /* WFHCam.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFHCam.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		799E2DF728CEC4CE00E6DF87 /* WFHCam-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WFHCam-Bridging-Header.h"; sourceTree = "<group>"; };
+		799E2DF828CEC4CE00E6DF87 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		799E2DFA28CEC53A00E6DF87 /* HardwarePlugInInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwarePlugInInterface.swift; sourceTree = "<group>"; };
+		799E2DFC28CEC5CD00E6DF87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799E2DFF28CEC7CB00E6DF87 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
+		799E2E0328CECE7E00E6DF87 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		799E2E0528CECE8300E6DF87 /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		799E2E0728CECE8900E6DF87 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		799E2E0928CECE9500E6DF87 /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
+		799E2E0C28CECF1400E6DF87 /* Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		799E2E0E28CECF2100E6DF87 /* PropertyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyValue.swift; sourceTree = "<group>"; };
+		799E2E1128CECF8700E6DF87 /* CVPixelBuffer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -15,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799E2E0028CEC7CB00E6DF87 /* CoreMediaIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,16 +50,76 @@
 		799E2DE428CEC40D00E6DF87 = {
 			isa = PBXGroup;
 			children = (
+				799E2DF428CEC42C00E6DF87 /* WFHCam */,
 				799E2DEE28CEC40D00E6DF87 /* Products */,
+				799E2DFE28CEC7CB00E6DF87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		799E2DEE28CEC40D00E6DF87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				799E2DED28CEC40D00E6DF87 /* WFHCam.bundle */,
+				799E2DED28CEC40D00E6DF87 /* WFHCam.plugin */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		799E2DF428CEC42C00E6DF87 /* WFHCam */ = {
+			isa = PBXGroup;
+			children = (
+				799E2DF828CEC4CE00E6DF87 /* Main.swift */,
+				799E2DFA28CEC53A00E6DF87 /* HardwarePlugInInterface.swift */,
+				799E2DFC28CEC5CD00E6DF87 /* Info.plist */,
+				799E2E1028CECF3E00E6DF87 /* Extension */,
+				799E2E0B28CECF0900E6DF87 /* Property */,
+				799E2E0228CECE3800E6DF87 /* Objects */,
+				799E2DF528CEC43D00E6DF87 /* Bridging */,
+			);
+			path = WFHCam;
+			sourceTree = "<group>";
+		};
+		799E2DF528CEC43D00E6DF87 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				799E2DF728CEC4CE00E6DF87 /* WFHCam-Bridging-Header.h */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		799E2DFE28CEC7CB00E6DF87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				799E2DFF28CEC7CB00E6DF87 /* CoreMediaIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		799E2E0228CECE3800E6DF87 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				799E2E0328CECE7E00E6DF87 /* Object.swift */,
+				799E2E0528CECE8300E6DF87 /* Plugin.swift */,
+				799E2E0728CECE8900E6DF87 /* Device.swift */,
+				799E2E0928CECE9500E6DF87 /* Stream.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		799E2E0B28CECF0900E6DF87 /* Property */ = {
+			isa = PBXGroup;
+			children = (
+				799E2E0C28CECF1400E6DF87 /* Property.swift */,
+				799E2E0E28CECF2100E6DF87 /* PropertyValue.swift */,
+			);
+			path = Property;
+			sourceTree = "<group>";
+		};
+		799E2E1028CECF3E00E6DF87 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				799E2E1128CECF8700E6DF87 /* CVPixelBuffer+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -53,7 +139,7 @@
 			);
 			name = WFHCam;
 			productName = WFHCam;
-			productReference = 799E2DED28CEC40D00E6DF87 /* WFHCam.bundle */;
+			productReference = 799E2DED28CEC40D00E6DF87 /* WFHCam.plugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -67,6 +153,7 @@
 				TargetAttributes = {
 					799E2DEC28CEC40D00E6DF87 = {
 						CreatedOnToolsVersion = 13.3.1;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -103,6 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				799E2E0F28CECF2100E6DF87 /* PropertyValue.swift in Sources */,
+				799E2E1228CECF8700E6DF87 /* CVPixelBuffer+.swift in Sources */,
+				799E2E0D28CECF1400E6DF87 /* Property.swift in Sources */,
+				799E2DFB28CEC53A00E6DF87 /* HardwarePlugInInterface.swift in Sources */,
+				799E2E0A28CECE9500E6DF87 /* Stream.swift in Sources */,
+				799E2E0428CECE7E00E6DF87 /* Object.swift in Sources */,
+				799E2E0628CECE8300E6DF87 /* Plugin.swift in Sources */,
+				799E2DF928CEC4CE00E6DF87 /* Main.swift in Sources */,
+				799E2E0828CECE8900E6DF87 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,40 +317,59 @@
 		799E2DF228CEC40D00E6DF87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z8WP5WHYSB;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WFHCam/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlessandroLoi.WFHCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OBJC_BRIDGING_HEADER = "WFHCam/Bridging/WFHCam-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
 			};
 			name = Debug;
 		};
 		799E2DF328CEC40D00E6DF87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z8WP5WHYSB;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WFHCam/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlessandroLoi.WFHCam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OBJC_BRIDGING_HEADER = "WFHCam/Bridging/WFHCam-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = plugin;
 			};
 			name = Release;
 		};
